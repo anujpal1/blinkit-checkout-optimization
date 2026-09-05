@@ -2,3 +2,5 @@ __pycache__/
 *.py[cod]
 .DS_Store
 study/
+INTERVIEW_NOTES.md
+PROJECT_SPEC.txt

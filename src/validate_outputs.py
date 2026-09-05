@@ -1,4 +1,3 @@
-import re
 import sqlite3
 from pathlib import Path
 
@@ -16,7 +15,7 @@ CHART_DIR = ROOT / "outputs" / "charts"
 
 def validate_outputs() -> None:
     required = [
-        ROOT / "README.md", ROOT / "INTERVIEW_NOTES.md",
+        ROOT / "README.md",
         ROOT / "dashboard" / "dashboard_guide.md", ROOT / "design" / "checkout_redesign.md",
         ROOT / "demo" / "app.py", ROOT / "demo" / "dashboard_data.py",
         DATABASE_PATH, ROOT / "data" / "processed" / "experiment.csv",
@@ -71,13 +70,9 @@ def validate_outputs() -> None:
         assert image.ndim in (2, 3) and image.size > 0, f"Unreadable chart: {chart_path.name}"
 
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    notes = (ROOT / "INTERVIEW_NOTES.md").read_text(encoding="utf-8")
     assert "synthetic data" in readme.lower() and "simulated" in readme.lower() and "no Blinkit internal data" in readme
-    resume_section = notes.split("## Three resume bullets", 1)[1].split("## Honest limitations", 1)[0]
-    assert len(re.findall(r"^- ", resume_section, flags=re.MULTILINE)) == 3, "Resume bullet count must be exactly three"
-    assert len(re.findall(r"^\d+\. \*\*", notes, flags=re.MULTILINE)) == 20, "Expected 20 interview questions"
 
-    print("Final validation passed: required artifacts, DB counts, formulas, experiment statistics, charts, and documentation are consistent.")
+    print("Final validation passed: public artifacts, DB counts, formulas, experiment statistics, charts, and README claims are consistent.")
 
 
 if __name__ == "__main__":

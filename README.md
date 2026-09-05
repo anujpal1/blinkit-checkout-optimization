@@ -82,7 +82,7 @@ Use the sidebar to select user type, device, city, acquisition channel, or deliv
 
 ![Funnel overview](outputs/charts/funnel_overview.png)
 
-## Key findings and root-cause drill-down
+## Key findings and diagnostic drill-down
 
 - The biggest full-funnel percentage loss is **Cart View → Checkout Started**: 2,005 sessions drop, a 27.97% abandonment rate. Product View → Add to Cart loses more sessions (2,557), but the cart transition is the largest checkout loss and is closer to purchase intent.
 - Returning users convert at 40.25% versus 31.69% for new users. Their cart-to-checkout rate is 7.05 percentage points higher and AOV is ₹820.16 versus ₹709.95.
@@ -105,7 +105,7 @@ This is a case-study estimate of cart value associated with loss—not booked re
 
 ## Simulated A/B test
 
-The simulated experiment randomizes 9,000 eligible repeat-customer sessions equally:
+The project separately simulates 9,000 eligible repeat-customer scenarios, split equally between Control and Treatment. This deterministic experiment dataset is not sampled from the main 11,579-session funnel dataset.
 
 | Result | Control | Treatment |
 |---|---:|---:|
@@ -144,7 +144,6 @@ The Streamlit demo is the primary live presentation layer. Dashboard-ready CSVs 
 ├── demo/                      # Streamlit app, calculation helpers, validation, screenshot
 ├── dashboard/dashboard_guide.md
 ├── design/checkout_redesign.md
-├── INTERVIEW_NOTES.md
 └── requirements.txt
 ```
 
@@ -158,7 +157,7 @@ python src/run_project.py
 python -m streamlit run demo/app.py
 ```
 
-The runner executes generation → validation → SQLite build → SQL/Python analysis → simulated A/B test → Streamlit calculation/UI validation → final output validation. It does not start a web server. The last command launches the read-only demo after the outputs exist. Individual scripts can also be run in pipeline order for explanation or debugging.
+The runner executes generation → validation → SQLite build → SQL/Python analysis → simulated A/B test → final output validation → Streamlit calculation/UI validation. It does not start a web server. The last command launches the read-only demo after the outputs exist. Individual scripts can also be run in pipeline order for explanation or debugging.
 
 ## Limitations
 
