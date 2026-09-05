@@ -1,0 +1,9 @@
+stage_order,stage,sessions,percent_of_app_opens,next_stage_conversion_pct,dropoff_sessions,dropoff_pct
+1,App Open,11579,100.0,95.03,575.0,4.97
+2,Search,11004,95.03,91.28,959.0,8.72
+3,Product View,10045,86.75,74.54,2557.0,25.46
+4,Add to Cart,7488,64.67,95.74,319.0,4.26
+5,Cart View,7169,61.91,72.03,2005.0,27.97
+6,Checkout Started,5164,44.6,92.41,392.0,7.59
+7,Payment Attempt,4772,41.21,87.99,573.0,12.01
+8,Order Completed,4199,36.26,,,

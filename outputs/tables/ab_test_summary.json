@@ -1,0 +1,38 @@
+{
+  "group_metrics": [
+    {
+      "variant": "Control",
+      "eligible_sessions": 4500,
+      "checkout_starts": 3546,
+      "payment_attempts": 3369,
+      "completed_orders": 2992,
+      "conversion_pct": 66.48888888888888,
+      "checkout_completion_pct": 84.37676254935138,
+      "average_order_value": 804.9054946524064,
+      "payment_failure_pct": 11.190264173345206
+    },
+    {
+      "variant": "Treatment",
+      "eligible_sessions": 4500,
+      "checkout_starts": 3661,
+      "payment_attempts": 3475,
+      "completed_orders": 3126,
+      "conversion_pct": 69.46666666666667,
+      "checkout_completion_pct": 85.3865064190112,
+      "average_order_value": 801.6236660268714,
+      "payment_failure_pct": 10.043165467625899
+    }
+  ],
+  "inference": {
+    "control_conversion_pct": 66.48888888888888,
+    "treatment_conversion_pct": 69.46666666666667,
+    "absolute_uplift_pp": 2.977777777777779,
+    "relative_uplift_pct": 4.478609625668452,
+    "ci_95_lower_pp": 1.050941573484224,
+    "ci_95_upper_pp": 4.904613982071335,
+    "z_statistic": 3.027431521842241,
+    "p_value": 0.0024664158921612997,
+    "alpha": 0.05,
+    "statistically_significant": true
+  }
+}

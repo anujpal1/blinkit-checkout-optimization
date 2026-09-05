@@ -1,0 +1,5 @@
+segment,cart_view_sessions,checkout_starts,completed_orders,cart_to_checkout_pct,cart_to_order_pct
+Free,1913,1479,1191,77.31,62.26
+Low (1-30),1759,1322,1084,75.16,61.63
+Medium (31-50),2421,1697,1382,70.1,57.08
+High (51+),1076,666,542,61.9,50.37

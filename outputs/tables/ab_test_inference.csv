@@ -1,0 +1,2 @@
+control_conversion_pct,treatment_conversion_pct,absolute_uplift_pp,relative_uplift_pct,ci_95_lower_pp,ci_95_upper_pp,z_statistic,p_value,alpha,statistically_significant
+66.48888888888888,69.46666666666667,2.977777777777779,4.478609625668452,1.050941573484224,4.904613982071335,3.027431521842241,0.0024664158921612997,0.05,True

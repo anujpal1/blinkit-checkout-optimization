@@ -1,0 +1,6 @@
+segment,sessions,cart_views,checkout_starts,completed_orders,overall_conversion_pct,cart_to_checkout_pct,checkout_completion_pct,checkout_rank
+Kolkata,1570,985,671,556,35.41,68.12,82.86,1
+Bengaluru,3102,1920,1379,1141,36.78,71.82,82.74,2
+Mumbai,2348,1405,1003,818,34.84,71.39,81.56,3
+Delhi,2476,1537,1124,898,36.27,73.13,79.89,4
+Hyderabad,2083,1322,987,786,37.73,74.66,79.64,5

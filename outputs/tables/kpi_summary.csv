@@ -1,0 +1,13 @@
+metric,value,definition
+sessions,11579.0,Distinct sessions
+completed_orders,4199.0,Sessions reaching Order Completed
+overall_conversion_pct,36.2639260730633,Order Completed / all sessions x 100
+checkout_completion_pct,81.3129357087529,Order Completed / Checkout Started x 100
+cart_abandonment_pct,27.967638443297528,(1 - Checkout Started / Cart View) x 100
+payment_failure_pct,12.007544006705784,Failed payment records / all payment attempts x 100
+average_order_value,775.3312288640153,Successful order value / successful orders
+synthetic_revenue,3255615.83,Sum of successful order value
+purchasing_users,3423.0,Supporting metric
+repeat_purchasers,681.0,Supporting metric
+repeat_purchaser_pct,19.894829097283086,Purchasers with 2+ completed orders / purchasing users x 100
+orders_per_purchaser,1.226701723634239,Supporting metric

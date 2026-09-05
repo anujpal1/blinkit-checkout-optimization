@@ -1,0 +1,6 @@
+potential_driver,comparison,metric,lower_group_pct,comparison_group_pct,gap_pp
+New-user checkout friction,New vs Returning,Cart-to-checkout conversion,68.1,75.15,7.050000000000011
+High delivery fee,High (51+) vs Free,Cart-to-checkout conversion,61.9,77.31,15.410000000000004
+Kolkata checkout friction,Kolkata vs Hyderabad,Cart-to-checkout conversion,68.12,74.66,6.539999999999992
+Android payment reliability,Android vs iOS,Payment failure rate,13.61,8.26,5.35
+Payment-method reliability,Cash on Delivery vs Wallet,Payment failure rate,16.88,9.42,7.459999999999999

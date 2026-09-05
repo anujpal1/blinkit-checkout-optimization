@@ -1,0 +1,67 @@
+{
+  "metrics": {
+    "sessions": 11579,
+    "completed_orders": 4199,
+    "overall_conversion_pct": 36.2639260730633,
+    "checkout_completion_pct": 81.3129357087529,
+    "cart_abandonment_pct": 27.967638443297528,
+    "payment_failure_pct": 12.007544006705784,
+    "average_order_value": 775.3312288640153,
+    "synthetic_revenue": 3255615.83,
+    "purchasing_users": 3423,
+    "repeat_purchasers": 681,
+    "repeat_purchaser_pct": 19.894829097283086,
+    "orders_per_purchaser": 1.226701723634239
+  },
+  "revenue_impact": {
+    "largest_checkout_transition": "Cart View -> Checkout Started",
+    "largest_stage_dropoff_sessions": 2005,
+    "estimated_cart_value_associated_with_all_cart_abandonment": 2244036.76,
+    "estimated_cart_value_associated_with_largest_stage": 1495821.8599999999,
+    "assumed_recovery_pct": 10.0,
+    "observed_post_checkout_completion_pct": 81.3129357087529,
+    "estimated_incremental_revenue_opportunity": 121629.66673392718
+  },
+  "root_causes": [
+    {
+      "potential_driver": "New-user checkout friction",
+      "comparison": "New vs Returning",
+      "metric": "Cart-to-checkout conversion",
+      "lower_group_pct": 68.1,
+      "comparison_group_pct": 75.15,
+      "gap_pp": 7.050000000000011
+    },
+    {
+      "potential_driver": "High delivery fee",
+      "comparison": "High (51+) vs Free",
+      "metric": "Cart-to-checkout conversion",
+      "lower_group_pct": 61.9,
+      "comparison_group_pct": 77.31,
+      "gap_pp": 15.410000000000004
+    },
+    {
+      "potential_driver": "Kolkata checkout friction",
+      "comparison": "Kolkata vs Hyderabad",
+      "metric": "Cart-to-checkout conversion",
+      "lower_group_pct": 68.12,
+      "comparison_group_pct": 74.66,
+      "gap_pp": 6.539999999999992
+    },
+    {
+      "potential_driver": "Android payment reliability",
+      "comparison": "Android vs iOS",
+      "metric": "Payment failure rate",
+      "lower_group_pct": 13.61,
+      "comparison_group_pct": 8.26,
+      "gap_pp": 5.35
+    },
+    {
+      "potential_driver": "Payment-method reliability",
+      "comparison": "Cash on Delivery vs Wallet",
+      "metric": "Payment failure rate",
+      "lower_group_pct": 16.88,
+      "comparison_group_pct": 9.42,
+      "gap_pp": 7.459999999999999
+    }
+  ]
+}

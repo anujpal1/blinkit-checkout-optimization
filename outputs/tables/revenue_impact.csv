@@ -1,0 +1,4 @@
+estimate,synthetic_amount,formula
+Cart value associated with all post-cart abandonment,2244036.76,Sum(cart value) for Cart View sessions without Order Completed
+Cart value associated with Cart View drop-off,1495821.8599999999,Sum(cart value) for Cart View sessions not reaching Checkout Started
+Potential incremental revenue,121629.66673392718,Largest-stage cart value x 10% recovery x observed post-checkout completion

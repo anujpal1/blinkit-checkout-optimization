@@ -1,0 +1,5 @@
+segment,sessions,cart_views,checkout_starts,completed_orders,overall_conversion_pct,cart_to_checkout_pct,checkout_completion_pct
+Organic,4925,3233,2382,1939,39.37,73.68,81.4
+Referral,1645,1004,733,601,36.53,73.01,81.99
+Paid Search,2607,1584,1124,896,34.37,70.96,79.72
+Paid Social,2402,1348,925,763,31.77,68.62,82.49

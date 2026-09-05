@@ -1,0 +1,5 @@
+segment,payment_attempts,successful_payments,failed_payments,payment_failure_pct,average_successful_order_value
+Wallet,605,548,57,9.42,775.46
+UPI,2554,2280,274,10.73,775.68
+Card,1151,987,164,14.25,772.49
+Cash on Delivery,462,384,78,16.88,780.35

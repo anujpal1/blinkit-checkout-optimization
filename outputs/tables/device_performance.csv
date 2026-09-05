@@ -1,0 +1,3 @@
+segment,sessions,cart_views,checkout_starts,completed_orders,overall_conversion_pct,cart_to_checkout_pct,checkout_completion_pct
+iOS,3397,2098,1522,1310,38.56,72.55,86.07
+Android,8182,5071,3642,2889,35.31,71.82,79.32
